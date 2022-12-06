@@ -1,0 +1,107 @@
+.contact{
+    background-color: #181818;
+    height: 700px;
+    display: flex;
+  }
+  .subcont1{
+    margin-left: 300px;
+    width: 500px;
+  
+  }
+  .subcont1>h3{
+    color: #ff0844;
+    font-size: 3em;
+    font-weight: 20;
+    margin-top: 50px;
+  }
+  .subcont1>p{
+    color: white;
+    margin-left: 60px;
+  }
+  .subcont1>form>.input{
+    background-color: #312f2f;
+    width: 300px;
+    height: 60px;
+    margin-top: 20px;
+    justify-content: center;
+    margin-left: 20px;
+  }
+  
+  .subcont1>form>.input>#text,#text1,#text2{
+    width: 100%;
+    height: 100%;
+    background-color:#312f2f ;
+    border: none;
+    outline: none;
+    text-indent: 30px;
+    color: white;
+  }
+  .subcont1>form>.input2{
+    background-color: #312f2f;
+    width: 300px;
+    height: 150px;
+    margin-top: 20px;
+    justify-content: center;
+    margin-left: 20px;
+    color: white;
+  
+  }
+  .subcont1>form>.input2>textarea{
+    width: 100%;
+    height: 100%;
+    background-color:#312f2f ;
+    border: none;
+    outline: none;
+    text-indent: 30px;
+    color: white;
+    
+  
+  }
+  .subcont1>form>button{
+    background-color: rgba(0, 0, 0, 0);
+    color: #ff0844;
+    border: 2px solid #ff0844;
+    width: 150px;
+    height: 50px;
+    font-size: 1.4em;
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: 80px;
+    margin-top: 30px;
+  
+  }
+  .subcont1>form>button:hover{
+    color: white;
+    border-color: white;
+    transition: 0.5s;
+  }
+  .subcont2{
+    color: white;
+    margin-left: 100px;
+    margin-top: 100px;
+    font-weight: 100;
+    font-size: 1em;
+    text-align: center;
+  }
+  h4{
+    font-weight: 100;
+    font-size: large;
+    margin-top: 40px;
+  
+  
+  }
+  .subcont2>.address>p{
+    margin-top: 20px;
+    font-style: italic;
+    color: #00BFFF;
+  }
+  .subcont2>.phone>p{
+    margin-top: 20px;
+    font-style: italic;
+    color: #00BFFF;
+  }
+  .subcont2>.timings>p{
+    margin-top: 20px;
+    
+    color: white;
+  }

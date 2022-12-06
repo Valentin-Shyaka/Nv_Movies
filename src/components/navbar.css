@@ -1,0 +1,237 @@
+#navbar{
+    top: 0;
+    background-color:#ab1111;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    position:sticky ;
+    top: 0;
+    z-index:999;
+    color: white;
+    
+    
+    
+    width: 100%;
+    
+   
+    
+    
+    
+    
+  }
+  #title{
+    background-color: #ff8177;
+    background-image: linear-gradient(to top, gold 0%, white 100% );
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    margin-left: 20px;
+  }
+  .logosearch {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-left: 40px;
+    
+  }
+  #navbarlinks{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    font-size: 1.2em;
+    color: white;
+  
+    
+    
+  }
+  
+  
+  #home{
+    display: center;
+    width: 120px;
+    height: 100%;
+    float: right;
+    font-size: 0.7em;
+    font-weight: 900;
+    background-color: black;
+    text-align: center;
+    
+    margin-right: 40px;
+    background-color: white;
+    background-image: white
+    ;
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+     
+  
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  #search{
+    background-color: white;
+    color:black ;
+    margin-left: 40px;
+    font-size: 1em;
+    width: 150px;
+    align-items: center;
+    display: center;
+    text-align: center;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+  
+  
+  }
+  #search:focus{
+    width: 350px;
+  }
+  #search:left{
+    width: 150px;
+  }
+  .results{
+    position: absolute;
+    overflow-x: hidden;
+    top: 20;
+    display: flex;
+    background: rgba( 81, 81, 217, 0.3 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 11.5px );
+  -webkit-backdrop-filter: blur( 11.5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+    flex-wrap: wrap;
+    left: 10%;
+    width: 80%;
+    height:  50vh;
+    /* max-height: 90vh; */
+    z-index: 9999;
+  
+  
+  
+  }
+  .results >.one_mv{
+    width: 200px;
+    height: 250px;
+    margin: 50px auto;
+    border:4px solid #00BFFF ;
+  }
+  .results>.one_mv>.identif{
+    height: 250px;
+    margin-top: -294px;
+    width: 200px;
+  }
+  .identif>h3{
+    margin-left: 70px;
+  }
+  .identif>button{
+    margin-left: 50px;
+  }
+  .results>.one_mv:hover>.identif{
+    opacity: 1;
+    transition: 0.5s;
+  
+  }
+  .results>.one_mv>img{
+    width: 100%;
+    height: 100%;
+  }
+  .results>.one_mv>p{
+    color: white;
+    margin-left: 50px;
+    margin-top: 20px;
+    font-weight: 600;
+  }
+  .results>.one_mv>.but{
+    background-color: gold;
+   
+    color: black;
+    font-size: medium;
+    font-weight: 600;
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 50% 100%, 0 0);
+    height: 30px;
+    width: 100px;
+    border: none;
+    outline: none;
+    margin-top: -254px;
+    margin-left: 100px;
+  
+  
+  }
+  .results>.one_mv>.but>p{
+    margin-left: 50px;
+    margin-top: 0px;
+  }
+  .results>.one_mv:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    border-color: red;
+    
+  }
+  
+  
+  
+  .results>.one_mv>p{
+    margin-top: 130px;
+    
+   
+  }
+  .results>.one_mv>p>i{
+    color: red;
+  }
+  .pazel{
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    border-radius: 50%;
+    border: 2px solid;
+    border-color: red;
+    align-items: center;
+    z-index: 999;
+    margin-left: 70px;
+    margin-top: 60px;
+  }
+  .pazel>i{
+    color:dodgerblue;
+    font-size: 3em;
+  }
+  .pazel>i:hover{
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  .results::-webkit-scrollbar {
+    width: 0.5em;
+  }
+   
+  .results::-webkit-scrollbar-track {
+    box-shadow: inset 8px 6px  dodgerblue;
+  }
+   
+  .results::-webkit-scrollbar-thumb {
+    background-color: red;
+    outline: 1px solid rgb(2, 126, 250);
+    border-radius: 30px;
+  }
+  

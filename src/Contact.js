@@ -1,6 +1,7 @@
 import React from 'react'
 import NavBar from './components/NavBar'
 import Footer from './components/Footer'
+import "./contact.css"
 
 function Contact() {
   return (
@@ -55,25 +56,7 @@ function Contact() {
         </div>
 
     </div>
-    <div class="foot1">
-        <div class="about">
-            <span>Status</span>
-            <span>Privacy</span>
-            <span>Terms</span>
-            <span>Cookie&nbsp;Preferences</span>
-            <span>Contact&nbsp;Us</span>
-            <span>Change&nbsp;Language</span>
-        </div>
-        <div class="icon">
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="#"><i class="fa-brands fa-github"></i></a>
-        </div>
-        <div class="text2">K-LIX © copyright 2022</div>
-
-
-    </div>
+   
     <Footer/>
     </div>
   )

@@ -2,48 +2,39 @@ import React from 'react'
 import Footer from './components/Footer'
 import {FaStar,FaStarHalf,FaArrowRight,FaFilm} from "react-icons/fa"
 import {BiPlayCircle} from "react-icons/bi"
-import Movie from './components/movie'
+import Movie from './components/OneMovie'
 import { Link } from 'react-router-dom'
+import { useEffect } from 'react'
+import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
+import "./home.css"
 
 
 function Home() {
-    const movies=[
-        {
-           cover:"batman.jpg",
-           title:"THE BATMAN" 
-        },
-        {
-            cover:"morbius.jpg",
-            title:"THE BATMAN" 
-         },
-         {
-            cover:"tmw.png",
-            title:"THE BATMAN" 
-         },
-         {
-            cover:"uncharted.jpg",
-            title:"THE BATMAN" 
-         }
-        ]
-        const movies2=[
-         {
-            cover:"thrones.jpg",
-            title:"THE BATMAN" 
-         },
-         {
-            cover:"train.jpg",
-            title:"THE BATMAN" 
-         },
-         {
-            cover:"strng.jpg",
-            title:"THE BATMAN" 
-         },
-         {
-            cover:"vkngs.jpg",
-            title:"THE BATMAN" 
-         }
-         
-    ]
+    const navigate=useNavigate()
+    const [page,setPage]=useState(1)
+    const [filter,setFilter]=useState('')
+    
+    const [movies, setMovies] = useState([])
+    async function getMovies(){
+        const movies= await fetch(`https://api.themoviedb.org/3/movie/now_playing?api_key=8ded552ed8b3b2c99dd933bbc411544d&language=en-US&page=${page}`)
+        .then(res=>res.json()).then(data=>{setMovies(data.results)
+        console.log(data)
+    })
+        console.log(movies.json())
+           
+
+        // const result= await movies;
+        // result.movies.forEach((movie) => {
+        //     console.log(result)
+        //     this.movies.push(movie)
+            
+        // });
+    }
+    useEffect(() => {
+       
+        getMovies()
+    }, [page])
   return (
     <div>
         <div className="home">
@@ -77,7 +68,7 @@ function Home() {
 
         </div>
         <button>PLAY NOW</button>
-        <button id="hm" onclick="document.location='toons.html'">Explore!</button><i className="fa-solid fa-arrow-right-long"><FaArrowRight/></i>
+        <button id="hm" onclick="document.location='toons.html'" onClick={()=>navigate("/toons")}>Explore!</button><i className="fa-solid fa-arrow-right-long"><FaArrowRight/></i>
         </div>
         
                 <div className="othermv">
@@ -148,37 +139,56 @@ function Home() {
     <div className="identifires">
         <div className="movies" >
             <div className="navigation">
-                <button>RELEASED</button>
-                <button>Imdb</button>
-                <button>TRENDING</button>
-                <button>POPULAR</button>
-                <button>UPCOMING</button>
+                <button onClick={()=>{
+                setPage(1)
+                console.log(`The page is ${page} now`)
+                
+                }}>RELEASED</button>
+                <button onClick={()=>{
+                setPage(2)
+                console.log(`The page is ${page} now`)
+                
+                }}>Imdb</button>
+                <button onClick={()=>{
+                setPage(3)
+                console.log(`The page is ${page} now`)
+                
+                }}>TRENDING</button>
+                <button onClick={()=>{
+                setPage(4)
+                console.log(`The page is ${page} now`)
+                
+                }}>POPULAR</button>
+                <button onClick={()=>{
+                setPage(5)
+                console.log(`The page is ${page} now`)
+                
+                }}>UPCOMING</button>
 
             </div>
             <div className="pre_show">
                 <p>Online Movies Booking</p>
                 <p id="show2">All Available Movies</p>
             </div>
-            <div className="all_movies">
-                <div className='type1'>
-                    {movies.map((movie) => (
-                        <Movie
-                            cover={movie.cover}
+                    <div className='movies_display'>
+                        {movies.map((movie) => (
+                         
+                            <Movie
+                            id={movie.id}
+                            cover={movie.poster_path}
                             title={movie.title}
                             />
+                           
+                            
+    
+                           
+                           
                     ))}
+                    </div>
+                    
                    
                    </div>
-                   <div className='type1'>
-                   {movies2.map((movie) => (
-                        <Movie
-                            cover={movie.cover}
-                            title={movie.title}
-                            />
-                    ))}
-
-                   </div>
-                    
+                  
 
 
                
@@ -190,10 +200,7 @@ function Home() {
 
 
                 
-                <div className="now">
-
-
-                </div>
+                
                 
 
                 </div>
@@ -201,16 +208,17 @@ function Home() {
 
             </div>
            
-
+            <Footer/>
 
         </div>
         
 
 
-    </div>
+    
 
-    <Footer/>
-    </div>
+  
+    
+    
   )
 }
 
