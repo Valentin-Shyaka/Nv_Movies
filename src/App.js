@@ -13,7 +13,7 @@ import Landing from './Landing';
 import { useNavigate } from 'react-router-dom';
 
 function App() {
-  const navigate=useNavigate()
+  
   const [movies, setMovies] = useState([])
   
   async function getMovies(){
