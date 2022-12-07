@@ -13,7 +13,12 @@ import "./home.css"
 function Home() {
     const navigate=useNavigate()
     const [page,setPage]=useState(1)
+    const [displayMovie,setDisplayMovie]= useState({})
     const [filter,setFilter]=useState('')
+    const random= Math.random()*10;
+    const id=Math.ceil(random)
+    
+    
     
     const [movies, setMovies] = useState([])
     async function getMovies(){
@@ -22,8 +27,7 @@ function Home() {
         console.log(data)
     })
         console.log(movies.json())
-           
-
+        
         // const result= await movies;
         // result.movies.forEach((movie) => {
         //     console.log(result)
@@ -31,6 +35,10 @@ function Home() {
             
         // });
     }
+    
+    console.log(displayMovie)
+    console.log(id)
+    
     useEffect(() => {
        
         getMovies()
@@ -49,7 +57,7 @@ function Home() {
         </div>
         </Link>
         <div className="name">
-            <p>SPIDER-MAN<span>:</span> <strong>NO WAY HOME</strong></p>
+            <p>{displayMovie.title}<span>:</span> <strong>{}</strong></p>
         </div>
         <div className="credits">
 
@@ -71,66 +79,11 @@ function Home() {
         <button id="hm" onclick="document.location='toons.html'" onClick={()=>navigate("/toons")}>Explore!</button><i className="fa-solid fa-arrow-right-long"><FaArrowRight/></i>
         </div>
         
-                <div className="othermv">
-                        <div className="one_mv">
-                            <img src="uncharted.jpg" alt=""/>
-                            <p>Uncharted</p>
-                            <div className="moredet1">
-                                <p><strong>Director:</strong> Ruben Fleischer</p>
-                                <p><strong>Genres:</strong> Action</p>
-                                <p><strong>Opening:</strong>February 18, 2022 </p>
-                    
-                            </div>
-                            <div className="identif">
-                                <i className="fa-solid fa-download"></i>
-                                <div className="stars"><i className="fa-solid fa-star"><FaStar/></i><i className="fa-solid fa-star"><FaStar/></i><i className="fa-solid fa-star"><FaStar/></i><i className="fa-solid fa-star"><FaStar/></i><i className="fa-solid fa-star-half-stroke"><FaStarHalf/></i></div>
-                                <h3>Movie</h3>
-                                <button>click to watch</button>
-                                
-
-                            </div>
-                        </div>
-                        <div className="one_mv">
-                            <img src="batman.jpg" alt=""/>
-                            <p>THE BATMAN</p>
-                            <div className="moredet1">
-                                <p><strong>Director:</strong> Matt Reeves</p>
-                                <p><strong>Genres:</strong> Action</p>
-                                <p><strong>Opening:</strong> March 4, 2022</p>
-                    
-                            </div>
-                            
-                            <div className="identif">
-                                <i className="fa-solid fa-download"></i>
-                                <div className="stars"><i className="fa-solid fa-star"><FaStar/></i><i className="fa-solid fa-star"><FaStar/></i><i className="fa-solid fa-star"><FaStar/></i><i className="fa-solid fa-star-half-stroke"><FaStarHalf/></i></div>
-                                <h3>Movie</h3>
-                                <button>click to watch</button>
-                                
-
-                            </div>
-                        </div>
-                        <div className="one_mv">
-                            <img src="morbius.jpg" alt="" id="img1"/>
-                            <p>Morbius</p>
-                            <div className="moredet1">
-                                <p><strong>Director:</strong> Daniel Espinosa</p>
-                                <p><strong>Genres:</strong> Action</p>
-                                <p><strong>Opening:</strong> April 1, 2022</p>
-                    
-                            </div>
-                            <div className="identif">
-                                <i className="fa-solid fa-download"></i>
-                                <div className="stars"><i className="fa-solid fa-star"><FaStar/></i><i className="fa-solid fa-star"><FaStar/></i><i className="fa-solid fa-star"><FaStar/></i><i className="fa-solid fa-star"><FaStar/></i><i className="fa-solid fa-star"><FaStar/></i></div>
-                                <h3>Movie</h3>
-                                <button>click to watch</button>
-                                
-
-                            </div>
-                        </div>
+              
 
 
 
-                </div>
+        {/* </div> */}
             
         
 
