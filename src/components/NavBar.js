@@ -4,6 +4,7 @@ import { FaCameraRetro } from 'react-icons/fa'
 import { FaFilm } from 'react-icons/fa'
 import { FaPhoneAlt } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
+import { FaSearch } from 'react-icons/fa'
 import { useEffect, useState } from 'react'
 import Movie from './OneMovie'
 import "./navbar.css"
@@ -74,11 +75,18 @@ function NavBar({movie}) {
         <div class="logosearch">
 
           <h3 id="title">K-LIX</h3>
-          <div class="search"><input type="text" placeholder="search" id="search" onChange={(e) => {
+          <div className='search-input'
+          onChange={(e) => {
             setDisplay("flex")
             searchMovies(e.target.value)
 
-          }}  /><i class="fas fa-search"></i></div>
+          }}
+          
+          >
+              <FaSearch className="search-searchIcon"/>
+              <input placeholder='Search movie' type={"text"}/>
+          </div>
+         
         </div>
         <div class="navbar-tooggle" id="mobile-menu">
           <span class="bar"></span>

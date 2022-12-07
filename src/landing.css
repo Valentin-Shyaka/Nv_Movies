@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 .container{
     background: url("C:\React\k-lix\public\background.jpg");
+    font-family: 'Poppins', sans-serif;
 }
 .landing{
     width: 100%;
@@ -10,7 +13,7 @@
     align-items: center ;
     justify-content: center;
     text-align: center;
-    background: rgba(34, 34, 34, 0.2);
+    background: rgba(26, 26, 26, 0.2);
 
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(5px);

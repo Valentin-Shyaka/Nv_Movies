@@ -79,37 +79,28 @@
      
   
   }
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  #search{
-    background-color: white;
-    color:black ;
-    margin-left: 40px;
-    font-size: 1em;
-    width: 150px;
+  .search-input{
+    display: flex;
     align-items: center;
-    display: center;
-    text-align: center;
-    height: 30px;
+    background: rgba(62, 112, 178, 0.3);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 11.5px );
+    -webkit-backdrop-filter: blur( 11.5px );
     border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 10px;
+    border-radius: 30px;
+    margin-left: 20px;
+}
+.search-input > input{
     border: none;
+    background-color: #00000000;
     outline: none;
-  
-  
-  }
-  #search:focus{
-    width: 350px;
-  }
-  #search:left{
-    width: 150px;
-  }
+    color: white ;
+}
+.search-searchIcon{
+    color: white;
+}
   .results{
     position: absolute;
     overflow-x: hidden;
