@@ -37,7 +37,8 @@ function Home() {
     }
     
     console.log(displayMovie)
-    console.log(id)
+    console.log("This is the random id "+id)
+    // console.log(id)
     
     useEffect(() => {
        
