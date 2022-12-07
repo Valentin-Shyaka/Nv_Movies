@@ -57,7 +57,7 @@ function Home() {
         </div>
         </Link>
         <div className="name">
-            <p>{displayMovie.title}<span>:</span> <strong>{}</strong></p>
+            <p>SpiderMAn<span>:</span><strong>No Way Home</strong></p>
         </div>
         <div className="credits">
 
