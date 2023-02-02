@@ -5,6 +5,7 @@
   padding: 0;
   font-family: 'Kumbh Sans', sans-serif;
   scroll-behavior: smooth;
+  
 
 }
 
@@ -169,7 +170,7 @@ h2 span::before{
   font-size: 1.4em;
   width: 400px;
   height: 300px;
-  margin-left: 300px;
+  margin-left: 200px;
 
 }
 #follows{
@@ -384,18 +385,18 @@ h2 span::before{
   
   font-size: 2em;
   color: #ff0844;
-  margin-left: 400px;
+  margin-left: 300px;
 
 }#soon{
   margin-top: 30px;
-  margin-left: 600px;
+  margin-left: 500px;
   color: white;
 
 }
 #subsbutt{
   display: flex;
   margin-top: 100px;
-  margin-left: 400px;
+  margin-left: 300px;
   
 }
 input[type=button]{
@@ -438,7 +439,7 @@ input[type=button]:hover{
   margin-top: 80px;
   margin-right: 50px;
   color: white;
-  margin-left: 400px;
+  margin-left: 300px;
   
 
 }
@@ -614,69 +615,7 @@ h3{
 }
 
 
-.name{
-  margin-left: 50px;
-  margin-top: 50px;
-  color: red;
-  font-size: 3em;
-  font-family:Arial, Helvetica, sans-serif;
-}
-.name>p>strong{
-  color: white;
-}
-.name>p>span{
-  color: dodgerblue;
-  font-size: 1.3em;
-  font-family: cursive;
-}
-.credits{
-  margin-left: 50px;
-  margin-top: 50px;
-}
-.credits>p{
-  color: white;
-  font-weight:500;
-  font-size: 1.2em;
-}
-.credits>p>span>i{
-  color:gold;
-}
-.credits>p>i{
- 
-  color: white;
-  margin-left:20px;
-  font-size: 1.4em;
-  font-weight: 600;
-  
-}
-#gb{
-  margin-left: 10px;
-  font-size: 5em;
-}
-.details>p{
-  margin-left: 50px;
-  margin-top: 50px;
-  color: white;
-  font-size: 1.2em;
-  font-weight: 300;
-  width:660px ;
-}
-.moredet{
-  margin-left: 50px;
-  margin-top: 50px;
-}
-.moredet>p{
-  color: white;
-  font-size: 1.1em;
-  font-weight: 500;
-  
 
-}
-.moredet>p>strong{
-  color:red;
-  font-weight: 800;
-  font-size:large;
-}
 
 .home3>.identifires{
   width: 100%;

@@ -1,8 +1,8 @@
+
 .foot1{
     position: sticky;
     width: 100%;
     height: 80px;
-    bottom: 0;
     background-color: rgb(34, 71, 109);
     text-align: center;
     z-index: 999999;

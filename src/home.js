@@ -8,6 +8,11 @@ import { useEffect } from 'react'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import "./home.css"
+import {Swiper,SwiperSlide} from "swiper/react"
+
+import "swiper/css";
+import "swiper/css/pagination"
+import { Pagination } from 'swiper';
 
 
 function Home() {
@@ -46,6 +51,7 @@ function Home() {
     }, [page])
   return (
     <div>
+        <div>
         <div className="home">
         <div className="indenter">
         <div >
@@ -70,12 +76,7 @@ function Home() {
             </p>
 
         </div>
-        <div className="moredet">
-            <p><strong>Starring:</strong> Tom Holland, Zendaya</p>
-            <p><strong>Genres:</strong> Action</p>
-            <p><strong>Tag:</strong> Action, Adventure, Horror</p>
-
-        </div>
+        
         <button>PLAY NOW</button>
         <button id="hm" onclick="document.location='toons.html'" onClick={()=>navigate("/toons")}>Explore!</button><i className="fa-solid fa-arrow-right-long"><FaArrowRight/></i>
         </div>
@@ -84,7 +85,7 @@ function Home() {
 
 
 
-        {/* </div> */}
+         </div> 
             
         
 

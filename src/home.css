@@ -1,3 +1,12 @@
+.movie__card{
+  width: 100%;
+  overflow: auto;
+}
+.movie__container{
+  width: 100%;
+  overflow-y: scroll;
+}
+
 .home>div>button{
     width: 150px;
     height: 50px;
@@ -28,6 +37,7 @@
   .othermv{
     background-image:linear-gradient(to left, rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.726),rgba(0, 0, 0, 0.795));
     width: 600px;
+    align-items: center;
   
   }
   .othermv>.one_mv{
@@ -64,6 +74,59 @@
   .othermv>.one_mv>img{
     width: 250px;
     float: right;
+  }
+  .name{
+    margin-left: 50px;
+    margin-top: 50px;
+    color: red;
+    font-size: 3em;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  .name>p>strong{
+    color: white;
+  }
+  .name>p>span{
+    color: dodgerblue;
+    font-size: 1.3em;
+    font-family: cursive;
+  }
+  .credits{
+    margin-left: 50px;
+    margin-top: 50px;
+  }
+  .credits>p{
+    color: white;
+    font-weight:500;
+    font-size: 1.2em;
+  }
+  .credits>p>span>i{
+    color:gold;
+  }
+  .credits>p>i{
+   
+    color: white;
+    margin-left:20px;
+    font-size: 1.4em;
+    font-weight: 600;
+    
+  }
+  
+.details>p{
+  margin-left: 50px;
+  margin-top: 50px;
+  color: white;
+  font-size: 1.2em;
+  font-weight: 300;
+  width:660px ;
+}
+.moredet{
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+  #gb{
+    margin-left: 10px;
+    font-size: 5em;
   }
   .moredet1>p>strong{
     color: red;
@@ -108,3 +171,9 @@
   .identifires{
     height: fit-content;
   }
+  .swiper-pagination-bullet{
+    background-color: var(--text-color) !important;
+}
+.swiper-pagination-bullet-active{
+    background-color: var(--title-color) !important;
+}

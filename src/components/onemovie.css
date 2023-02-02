@@ -1,6 +1,6 @@
 .movie_container>.one_mv>.but{
     background-color: gold;
-   
+   overflow: hidden;
     color: black;
     font-size: medium;
     font-weight: 600;
