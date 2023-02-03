@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 .container{
-    background: url("C:\React\k-lix\public\background.jpg");
+    background: url("C:\React\k-lix\src\assets\background.jpg");
     font-family: 'Poppins', sans-serif;
 }
 .landing{

@@ -1,6 +1,6 @@
 .movie1{
     width: 100%;
-    background: url("c:\React\K-LIX\public\movies.jpg");
+    background: url("c:\React\K-LIX\src\assets\movies.jpg");
     height: 400px;
     opacity: 0.8;
   }
